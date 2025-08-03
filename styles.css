@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+  background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    color: #333;
+    line-height: 1.6;
+    padding-top:0px ;
+}
+
+header {
+    background-color: #2d2d2d;
+    color: white;
+    padding: 20px 0;
+    position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    padding: 5px;
+}
+
+header nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* Container for side-by-side layout */
+.container1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+/* left side: Theory */
+.theory {
+  order: 2;
+  flex: 2;
+  padding-right: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+/* right side: Photo */
+.photo {
+  order: 1;
+  flex: 1;
+  padding-right: 20px;
+  
+}
+
+.photo img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  
+}
+
+/* Optional: Styling for small image inside another section */
+.image .my img {
+  width: 50px;
+  border-radius: 5px;
+}
+.resume-button {
+  display: inline-block;
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  color: black;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+.resume-container{
+    text-align: left;
+}
+
+.resume-button:hover {
+  background-color: #f3b8ef;
+  text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.box {
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  border: 2px solid #eef2ee;
+  padding: 15px;
+  margin: 10px auto;
+  border-radius: 8px;
+  background-color: #ffffff;
+  width: 320px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-weight: bold;
+  font-size: 18px;
+  color: #2c3e50;
+}
+
+.details {
+  margin-top: 5px;
+  font-size: 16px;
+  color: #555;
+}
+.section {
+    padding: 60px 20px;
+    margin: 40px 0;
+    background-color: #fff;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+section {
+    display: block;
+    unicode-bidi: isolate;
+}
+p{
+    margin: 10px 0 5px;
+    font-weight:bold;
+}
+.container2{
+    max-width: 900px;
+    margin: auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    margin-bottom: 50px;
+}
+.skills-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allows columns to stack on small screens */
+    gap: 40px;
+    margin-top: 20px;
+}
+.skills-column {
+    flex: 1;
+    min-width: 300px; /* Prevents columns from getting too narrow */
+}
+.skill {
+    margin-bottom: 25px;
+}
+.skill-name {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+.progress-bar {
+    background-color: #e0e0e0;
+    height: 25px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+.progress-fill {
+    
+    height: 100%;
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    transition: width 0.7s ease-in-out;
+    text-align: right;
+    line-height: 25px;
+    color: #fff;
+    font-weight: bold;
+    padding-right: 12px;
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+.progress-text {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+/* Section styling */
+#certificates {
+  padding: 2rem;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+/* Slider layout */
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Container for certificate images */
+.certificate-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Certificate image styling */
+.certificate {
+  display: none;
+  width: 100%;
+  border-radius: 8px;
+  
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Show only the active certificate */
+.certificate.active {
+  display: block;
+}
+
+/* Navigation buttons */
+button {
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+button:focus {
+  outline: 2px solid #357ab8;
+  outline-offset: 2px;
+}
+
+.project-details {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.project-details h2 {
+  color: black;
+  margin-top: 1.5rem;
+}
+
+.project-details ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+}
+
+a {
+  color: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+    text-align: left;
+}
+
+ul li {
+    font-size: 1.1rem;
+    padding: 5px 0;
+}
+
+ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+
+footer {
+    background-color: #2d2d2d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1rem;
+}
